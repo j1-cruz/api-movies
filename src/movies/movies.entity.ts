@@ -7,7 +7,11 @@ export enum MoviesStatus {
 export class Movie {
     id: string;
     title: string;
-    description:string;
     reparto: string;
+    genero: string;
+    sinopsis: string;
+    duracion: string;
+    img: string;
+    fechaLanzamiento: string;
     status: MoviesStatus
 }

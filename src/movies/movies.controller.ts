@@ -16,8 +16,12 @@ export class MoviesController {
     createMovie(@Body() newMovie: CreateMovieDto){
       return this.moviesService.createMovie (
         newMovie.title, 
-        newMovie.description, 
-        newMovie.reparto
+        newMovie.sinopsis, 
+        newMovie.reparto,
+        newMovie.duracion,
+        newMovie.img,
+        newMovie.fechaLanzamiento,
+        newMovie.genero
       )
     }
 
